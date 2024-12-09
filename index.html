@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket</title>
+</head>
+<body>
+    <h1>Bat Ball Stump</h1>
+    <button onclick=" let r1=Math.round(Math.random()*3);
+    let cc1=2*r1;
+    alert(cricket(0,cc1))">Bat</button>
+
+    <button onclick=" let r2=Math.round(Math.random()*3);
+    let cc2=2*r2; alert(cricket(0,cc2))">Ball</button>
+
+    <button onclick="let r3=Math.round(Math.random()*3);
+    let cc3=2*r3; alert(cricket(0,cc3))">Stump</button>
+    <script>
+        let result;
+    function cricket(a,b){
+        if(a===b){
+        return result=`It's a tie`;
+        }else{
+        if((a+b)/2 ==1){
+        return result= a<b?'You Won':'Computer Won';   
+        }
+        else if((a+b)/2 == 2){
+          return result= a>b?'You Won':'Computer Won';
+        }
+        else{
+           return result= a<b?'You Won':'Computer Won';
+        }
+        }
+    }
+    </script>
+</body>
+</html>
